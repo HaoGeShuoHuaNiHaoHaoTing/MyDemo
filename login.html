@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/adapter.css">
+    
+    <script src="js/less.js"></script>
+    <script src="js/zepto-1.1.4.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <h4>账号登入</h4>
+    </header>
+    <section class="user">
+        <form action="">
+            <lable>
+                <input type="text" placeholder="邮箱/手机号码/猫猫帐号">
+            </lable>
+            <lable>
+                <input type="password" placeholder="密码">
+            </lable>
+            <lable>
+                <input type="submit" value="立即登入">
+            </lable>
+        </form>
+    </section>
+    <section class="erweima">
+        
+    </section>
+    <section class="other">
+        <span>其它方式登入</span>
+    </section>
+    <section class="contact">
+        <ul>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+            <li>
+                <a href="javascript:;"></a>
+            </li>
+        </ul>
+    </section>
+    <section class="forget">
+        <a href="javascript:;">注册猫猫账号</a>
+        <span>|</span>
+        <a href="javascript:;">忘记密码</a>
+    </section>
+    <section class="forget option">
+        <a href="javascript:;">简体</a>
+        <span>|</span>
+        <a href="javascript:;" class="no_use">繁体</a>
+        <span>|</span>
+        <a href="javascript:;" class="no_use">English</a>
+        <span>|</span>
+        <a href="javascript:;" class="no_use">常见问题</a>
+    </section>
+    <footer>
+        猫猫公司版权所有-京ICP备10046444- <img src="./images/gongan.png" alt="">
+        京公网安备11010802020134号
+    </footer>
+    <div class="bg none">
+        <div class="one">猫猫账号扫码登入</div>
+        <div class="two">请打开「设置 > 小米帐号 > 右上角扫一扫</div>
+        <div class="three">扫码登入</div>
+        <img src="./upload/big_ma.png" alt="">
+        <div class="close">
+            <div class="row"></div>
+            <div class="vertical"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.erweima').tap(function() {
+            $('.bg').removeClass('none');
+        });
+        $('.close').tap(function() {
+            $(".bg").addClass('none');
+        })
+    </script>
+</body>
+
+</html>

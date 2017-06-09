@@ -1,13 +1,30 @@
+body {
+	color: #333;
+}
+
 nav {
 	width: 100%;
   height: 36.86px;
-  background-color: pink;
   position: fixed;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.8);
 }
+h4 {
+	height: 40px;
+	line-height:40px;
+	font-size: 16px;
+	color: rgba(0,0,0,0.8);
+	text-indent: 1em;
+	font-family: '微软雅黑';
+}
+
+
 nav .search {
   width: 231.11px;
   height: 24.86px;
   margin: 6px auto;
+  border-radius: 4px;
+  overflow: hidden;
 }
 nav .search input {
   width: 100%;
@@ -17,18 +34,19 @@ nav .search input {
   background-size: 233px 26px;
 }
 nav .logo {
-	width: 44.44px;
-	height: 15px;
-	background-color: yellow;
+	width: 30px;
+	height: 30px;
 	position: absolute;
-	left: 0;
+	left: 10px;
 	top: 50%;
-	margin-top: -7.5px;
+	margin-top: -15px;
+	background: url('../upload/cat2.png') no-repeat center;
+	background-size: 30px 30px;
+	color: white;
 }
 nav .login {
 	width: 44.42px;
 	height: 15px;
-	background-color: yellow;
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -38,4 +56,219 @@ nav .login a {
 	text-align: center;
 	color: #FFF;
 }
+header li {
+	padding-top: 36.86px;
+}
+header li img {
+	width: 100%;
+}
+section {
+	background-color: #FFF;
+}
+.box .img {
+	float: left;
+}
+.box .img img {
+	width: 66.66px;
+	height: 33.33px;
+}
+.box .sc_title {
+	width: auto;
+	height: 33.33px;
+	line-height: 33.33px;
+	// float: left;
+	font-size: 12px;
+	text-indent: 1em;
+}
+.body ul {
+	// display: flex;
+}
+.body ul li {
+	width: 49.75%;
+	float: left;
+}
+.body ul li:first-child {
+	margin-right: 0.5%;
+}
+.ff ul li:first-child {
+	width: 40.5%;
+}
+.ff ul li:nth-child(2),
+.ff ul li:nth-child(3) {
+	width: 57.83%;
+}
+.ware ul li:nth-child(odd) {
+	margin-right: 0.5%;
+}
+.ware ul li a p {
+	text-indent: 1em;
+}
+.ware ul li a p:nth-child(2) {
+	font-size: 12px;
+    color: rgba(0,0,0,.87);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+}
+.ware ul li a p:nth-child(3) {
+	margin-top: 2px;
+    font-size: 12px;
+    color: rgba(0,0,0,.54);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.ware ul li a p:nth-child(4) {
+	font-size: 14px;
+    color: #ff6000;
+    margin-bottom: 6px;
+    font-family: '微软雅黑';
+}
+.ware ul li a p:nth-child(4) span {
+	color: rgba(0,0,0,.54);
+	font-size: 10px;
+}
+.ware .essence {
+	position: relative;
+}
+.ware .essence img:last-child {
+	position: absolute;
+	width: auto;
+	height: 14.22px;
+	top: 0;
+	left: 0;
+}
+.more {
+	height: 44px;
+}
+.more a {
+	line-height: 44px;
+	text-align: center;
+	font-size: 12px;
+	color: rgba(0,0,0,.6);
+}
+.exposure {
+	margin-top: 6px;
+}
+.list .img {
+	float: left;
+	width: 50%;
+}
+.list .info {
+	float: left;
+	width: 50%;
+}
+.list .info p {
+	margin-left: 10px;
+}
+.list .info p:nth-child(1) {
+	margin-top: 40px;
+	font-size: 12px;
+    color: rgba(0,0,0,.87);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list .info p:nth-child(2) {
+	margin-top: 4px;
+    font-size: 12px;
+    color: rgba(0,0,0,.54)
+}
+.list .info p:nth-child(3) {
+	font-size: 14px;
+    color: #ff6000;
+    margin-top: 8px;
+}
+.title {
+	margin-top: 6px;
+}
+.listall .listbox .box-top {
+	margin-top: 8px;
+}
+.listall .listbox .box-left {
+	float: left;
+	font-size: 12px;
+    color: rgba(0,0,0,.87);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+}
+.listall .listbox .box-right {
+	float: right;
+	font-size: 14px;
+    color: #ff6000;
+    position: relative;
+    margin-right: 10px;
+}
+.listall .listbox .box-bottom {
+	margin-top: 4px;
+    font-size: 12px;
+    color: rgba(0,0,0,.54);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.diff li {
+	float: left;
 
+}
+.diff li:nth-child(odd) {
+	margin-right: 1%;
+}
+.diff .big {
+	width: 66%;
+}
+.diff .small {
+	width: 33%;
+}
+.footer {
+	margin-bottom: 50px;
+}
+
+
+footer {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #FFF;
+	z-index: 9999;
+}
+footer ul {
+	display: flex;
+}
+footer ul li {
+	flex: 1;
+	text-align: center;
+}
+footer ul li a {
+	font-size: 13px;
+    color: #999;
+    padding-top: 5px;
+}
+footer ul li div {
+	margin: 2px auto;
+	width: 17.77px;
+	height: 17.77px;
+	background-image: url(../images/footer.png);
+	background-size: 17.77px 142.16px;
+}
+footer ul li:nth-child(1) div {
+	background-position-y:-107px; 
+}
+footer ul li:nth-child(1) p {
+	color: #f37d0f;
+}
+footer ul li:nth-child(2) div {
+	background-position-y:-160px; 
+}
+footer ul li:nth-child(3) div {
+	background-position-y:-53px; 
+}
+footer ul li:nth-child(4) div {
+	background-position-y:-89px; 
+}

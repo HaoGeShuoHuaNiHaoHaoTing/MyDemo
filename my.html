@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/adapter.css">
+    
+    <script src="js/less.js"></script>
+    <script src="js/zepto-1.1.4.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="user">
+            <a href="javascript:;">
+                <div class="img"></div>
+                <div class="name">登入/注册</div>
+            </a>
+        </div>
+    </nav>
+    <section class="goods">
+        <div class="my_goods"><a href="javascript:;">我的订单</a></div>
+        <div class="all_goods"><a href="javascript:;">全部订单</a></div>
+    </section>
+    <section class="handle">
+        <ul>
+            <li>
+                <a href="javascript:;">
+                    <div></div>
+                    <p>待付款</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div></div>
+                    <p>待收获</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div></div>
+                    <p>退换修</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="benefit">
+        <ul>
+            <li>
+                <a href="javascript:;">我的优惠</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="javascript:;">服务中心</a>
+            </li>
+            <li>
+                <a href="javascript:;">猫猫之家</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="javascript:;">设置</a>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <div></div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="./category.html">
+                    <div></div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="./car.html">
+                    <div></div>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div></div>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        function skip() {
+            location.href = './login.html';
+        }
+        $('nav').find('a').tap(skip);
+        $('section').find('a').tap(skip);
+    </script>
+</body>
+
+</html>
